@@ -1,13 +1,13 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
-    id 'kotlin-android-extensions'
+    id 'kotlin-parcelize'
     id 'kotlin-kapt'
 }
 
 android {
     namespace 'com.sachin_singh_dighan.learnkotlinproject'
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.sachin_singh_dighan.learnkotlinproject"
@@ -31,6 +31,9 @@ android {
     }
     kotlinOptions {
         jvmTarget = '1.8'
+    }
+    buildFeatures {
+        viewBinding = true
     }
 }
 
